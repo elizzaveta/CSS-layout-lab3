@@ -107,6 +107,9 @@ header{
 
         width: 18.18182%;
     }
+    .text_camera{
+        font-size: 21px;
+    }
 
 }
 @media (max-width: 724px) {
@@ -122,6 +125,9 @@ header{
     }
     .info_block{
         width: 40%;
+    }
+    .text_camera{
+        font-size: 16px;
     }
 }
 .menu_list_item{
@@ -171,7 +177,6 @@ header{
 }
 .text_camera{
     text-align: center;
-    font-size: 21px;
     margin-right: 10%;
     margin-left: 10%;
 }
