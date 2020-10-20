@@ -82,7 +82,7 @@ header{
 .product_name{
     color: #bfbbae;
     font-family: "Microsoft JhengHei Light";
-    font-size: 40px;
+    font-size: 18px;
     /*color: #a65863;*/
     margin-top: 480px;
     margin-left: 5%;
@@ -111,7 +111,9 @@ header{
         margin-right: 10%;
         margin-left: 10%;
     }
-
+    footer{
+      grid-template-columns: repeat(4, 1fr);
+    }
 }
 @media (max-width: 724px) {
     .menu{
@@ -129,6 +131,9 @@ header{
     }
     .text_camera{
         font-size: 16px;
+    }
+    footer{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 .menu_list_item{
@@ -186,7 +191,7 @@ header{
 .title{
     text-align: center;
     margin: 10px;
-    font-size: 30px;
+    font-size: 19px;
 }
 .text_camera{
     text-align: center;
@@ -220,6 +225,23 @@ header{
 }
 
 footer{
-    background: rgba(222,216,197,0.52);
+    font-family: "Microsoft JhengHei Light";
+    background: rgb(42, 42, 42);
+    color: white;
     float: end;
+    display: grid;
 }
+li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.footer_item:hover{
+    text-decoration: underline;
+}
+.footer_item{
+    margin-bottom: auto;
+    font-size: 15px;
+}
+
+
