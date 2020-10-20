@@ -6,7 +6,7 @@ body{
 }
 header{
     text-align: center;
-    background: rgb(91, 100, 97);
+    background: rgb(42 42 42);
     width: 100%;
     height: 50px;
 }
@@ -48,7 +48,7 @@ header{
     margin-top: 9px;
     height: 2px;
     width: 47%;
-    background-color: rgb(91, 100, 97);
+    background-color: rgb(42 42 42);
     position: sticky;
     z-index: 49;
     top:9px;
@@ -57,7 +57,7 @@ header{
     margin-top: 9px;
     height: 2px;
     width: 47%;
-    background: rgb(91, 100, 97);
+    background: rgb(42 42 42);
     position: sticky;
     z-index: 49;
     top:9px;
@@ -72,8 +72,8 @@ header{
 }
 .photo{
     display: flex;
-    background-image: url("back_image_fuji.jpeg");
-    min-height: 400px;
+    background-image: url("fujifilm-x-t4-main.jpg");
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,9 +82,9 @@ header{
 .product_name{
     color: #bfbbae;
     font-family: "Microsoft JhengHei Light";
-    font-size: 20px;
+    font-size: 40px;
     /*color: #a65863;*/
-    margin-top: 185px;
+    margin-top: 480px;
     margin-left: 5%;
 }
 
@@ -154,21 +154,33 @@ header{
 }
 .charactiristics>div{
     margin: 20px;
+    margin-top: 30px;
     /*background-color: lightpink;*/
 }
 .line{
     height: 1px;
     background: rgb(91, 100, 97);
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 25px;
     margin-left: 5%;
     margin-right: 5%;
 }
+.main_block_info_text{
+
+    background-image: url("mountains_picture.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding: 15%;
+}
 .text{
     font-family: "Microsoft JhengHei Light";
-
+    color: white;
     display: grid;
-    margin: 10%;
 
 }
 .title{
