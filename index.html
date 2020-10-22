@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
     <title>Fujifilm X-T4</title>
 </head>
 <body>
@@ -86,53 +87,52 @@
 
 
 <div class = "features_list">
-    <div class = "feature_performance">Производительность</div>
-    <div class = "feature_color">Цветопередача</div>
-    <div class = "feature_reliability">Надежность</div>
-    <div class = "feature_video">Видео</div>
+    <div class = "feature_performance" id = "f1" onclick="on_feature_click(id)">Производительность</div>
+    <div class = "feature_color" id = "f2" onclick="on_feature_click(id)">Цветопередача</div>
+    <div class = "feature_reliability" id = "f3" onclick="on_feature_click(id)">Надежность</div>
+    <div class = "feature_video" id = "f4" onclick="on_feature_click(id)">Видео</div>
 </div>
 
 <div class="feature">
-    <div class="performance_info">
-        <img src="performance_feature.jpg">
+    <div class="performance_info" id = "f1_info">
         <div class = "feature_text">
             <p>
                 Профессиональная камера должна быть способна сфотографировать или записать видео в любой момент. Автофокус X-T4 срабатывает всего за 0,02 секунды, а режим серийной съемки до 15 кадров в секунду с механическим затвором* обеспечивает рекордную скорость и функциональность, позволяя запечатлеть каждое мгновение в максимально возможном качестве.
             </p>
         </div>
+        <img src="performance_feature.jpg">
     </div>
-    <div class="color_info">
-        <img src="color_feature.jpg">
+    <div class="color_info" id = "f2_info">
         <div class = "feature_text">
             <p>
                 Вот уже более 85 лет компания FUJIFILM непрерывно развивается и движется вместе с изменениями в технологиях от аналоговых к цифровым. Мы постоянно изучаем возможности цветопередачи и открываем новые пути для вашего творчества. В камере X-T4 представлен новый режим моделирования пленки ETERNA Bleach Bypass, который позволяет получать очень выразительные кадры с низкой насыщенностью и высокой контрастностью.
             </p>
         </div>
+        <img src="color_feature.jpg">
     </div>
-    <div class="reliability_info">
-        <img src="rel_feature.jpg">
+    <div class="reliability_info" id = "f3_info">
         <div class = "feature_text">
             <p>
                 Новая встроенная 6,5-ступенчатая* система стабилизации изображения по заданным осям (IBIS) и новый аккумулятор повышенной емкости X-T4 обеспечивают длительное время работы. Все эти технические новинки умещаются в компактном корпусе, устойчивом к пыли, влаге и погодным условиям, благодаря чему камеру можно использовать при температуре до –10 градусов Цельсия. Эргономичный хват позволяет крепко держать камеру даже с крупными телеобъективами.
             </p>
         </div>
+        <img src="rel_feature.jpg">
     </div>
-    <div class="video_info">
-
-        <img src="X-T4_Image_Movie_Set-1-3.jpg">
+    <div class="video_info" id = "f4_info">
         <div class = "feature_text">
             <p>
                 Эволюция X-T4 не ограничивается только фотосъемкой. Помимо высокоскоростного режима записи видео Full HD 240P с эффектом замедления до 10 раз, камера X-T4 имеет функцию электронной стабилизации изображения (DIS) и режим форсированной стабилизации изображения (IS). Вместе со встроенной системой стабилизации IBIS эти два режима обеспечивают съемку качественно нового уровня даже без внешнего стабилизатора и других дополнительных приспособлений.
             </p>
         </div>
+        <img src="X-T4_Image_Movie_Set-1-3.jpg">
     </div>
     <div class="void">
-        <img src="X-T4_Image_Movie_Set-1-3.jpg">
         <div class = "feature_text">
             <p>
                 Эволюция X-T4 не ограничивается только фотосъемкой. Помимо высокоскоростного режима записи видео Full HD 240P с эффектом замедления до 10 раз, камера X-T4 имеет функцию электронной стабилизации изображения (DIS) и режим форсированной стабилизации изображения (IS). Вместе со встроенной системой стабилизации IBIS эти два режима обеспечивают съемку качественно нового уровня даже без внешнего стабилизатора и других дополнительных приспособлений.
             </p>
         </div>
+        <img src="X-T4_Image_Movie_Set-1-3.jpg">
     </div>
 </div>
 
