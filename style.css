@@ -1,6 +1,5 @@
 body{
-    /*background: rgba(200, 222, 213, 0.52);*/
-    background: #fcfffe;
+    background: #29292d;
     margin: 0px;
     padding: 0px;
 }
@@ -97,7 +96,7 @@ button{
     position: sticky;
     z-index: 49;
     top:9px;
-}
+}                                                                   /*анимировать линии на скролл, чтобы они от центра расходились. И чтобы лого исчезало*/
 .line_after{
     margin-top: 9px;
     height: 2px;
@@ -141,7 +140,7 @@ button{
 .charactiristics>div{
     margin: 20px;
     margin-top: 30px;
-    /*background-color: lightpink;*/
+    color: white;
 }
 /*--------------------pictire + text--------------------*/
 .main_block_info_text{
@@ -178,29 +177,39 @@ button{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+.feature_performance{
+    background: #536585;
+}
+.feature_color{
+    background: #99999b;
+}
+.feature_reliability{
+    background: #99999b;
+}
+.feature_video{
+    background: #99999b;
+}
 .features_list >div{
     margin: 3px;
-    background: #bfbbae;
     color: white;
 }
-.features_list >div:hover{
-    background: rgb(83 101 133);
+.features_list > div:hover{
     cursor: pointer;
 }
 .feature>div{
     font-family: "Microsoft JhengHei Light";
     background: black;
-    color: #bfbbae;
+    color: #99999b;
     display: flex;
 }
 
 .performance_info{
     position: absolute;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 .color_info{
     position: absolute;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 .reliability_info{
     position: absolute;
@@ -227,7 +236,7 @@ footer{
     margin-top: 20px;
     font-family: "Microsoft JhengHei Light";
     background: rgb(42, 42, 42);
-    color: white;
+    color: #99999b;
     float: end;
     display: grid;
 }
@@ -281,6 +290,9 @@ li{
         grid-template-columns: repeat(4,1fr);
         font-size: 20px;
     }
+    p{
+        font-size: 23px;
+    }
 }
 @media (max-width: 1280px) {
     .info_block{
@@ -305,6 +317,9 @@ li{
         grid-template-columns: repeat(4,1fr);
         font-size: 18px;
     }
+    p{
+        font-size: 19px;
+    }
 }
 @media (max-width: 650px) {
     .menu{
@@ -325,6 +340,9 @@ li{
     }
     .features_list{
         grid-template-columns: repeat(2,1fr);
+        font-size: 16px;
+    }
+    p{
         font-size: 16px;
     }
 }

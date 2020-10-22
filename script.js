@@ -4,8 +4,8 @@ function on_feature_click(id){
     let last_clicked_elem = document.getElementById(prev_clicked_id);
     let clicked = document.getElementById(id);
 
-    last_clicked_elem.style.backgroundColor = "#bfbbae";
-    clicked.style.backgroundColor = "rgb(83 101 133)";
+    last_clicked_elem.style.backgroundColor = "#99999b";
+    clicked.style.backgroundColor = "#536585";
 
     let clicked_info_block_id;
     if(id === "f1") clicked_info_block_id = "f1_info";
