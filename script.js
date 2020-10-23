@@ -19,9 +19,14 @@ function on_feature_click(id){
     prev_info_block_elem.style.visibility = "hidden";
     clicked_info_block_elem.style.visibility = "visible";
 
-
-
     prev_clicked_id = id;
     prev_info_block_id = clicked_info_block_id;
 
+}
+
+
+function on_menu_button_click(){
+    let drop_down_menu = document.getElementById("dr_d_menu");
+    if(drop_down_menu.style.visibility === "visible") drop_down_menu.style.visibility = "hidden";
+    else drop_down_menu.style.visibility = "visible";
 }
