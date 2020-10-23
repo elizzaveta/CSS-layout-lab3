@@ -1,4 +1,5 @@
 body{
+    font-family: "Microsoft JhengHei Light";
     background: #29292d;
     margin: 0px;
     padding: 0px;
@@ -18,7 +19,6 @@ header{
     margin: 5px;
 }
 .menu_icon:hover{
-    opacity: 0.7;
     cursor: pointer;
 }
 .menu_icon_el{
@@ -35,7 +35,6 @@ header{
     /*чтобы меню по центру*/
 }
 .menu_list_item{
-    font-family: "Microsoft JhengHei Light";
     margin-top: auto;
     color: white;
     margin-right: 10px;
@@ -47,6 +46,8 @@ header{
 
 }
 .search{
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
     margin-top: auto;
     padding: 7px;
@@ -60,7 +61,6 @@ header{
     height: 18px;
 }
 button{
-    font-family: "Microsoft JhengHei Light";
     text-align: center;
     cursor: pointer;
 
@@ -83,7 +83,6 @@ button{
 .drop_menu_list_item{
     margin: 14px;
     color: white;
-    font-family: "Microsoft JhengHei Light";
 
 
 }
@@ -103,7 +102,6 @@ button{
     text-align: center;
 }
 .sticky_name{
-    font-family: "Microsoft JhengHei Light";
     position: sticky;
     z-index: 49;
     color: #a0726b;
@@ -122,8 +120,9 @@ button{
     z-index: 49;
     top:9px;
     animation-name:line;
-    animation-duration: 5s;
+    animation-duration: 3s;
     margin-right: auto;
+    /*animation-iteration-count: infinite;*/
 }                                                                   /*анимировать линии на скролл, чтобы они от центра расходились. И чтобы лого исчезало*/
 .line_after{
     margin-top: 9px;
@@ -134,8 +133,9 @@ button{
     z-index: 49;
     top:9px;
     animation-name:line;
-    animation-duration: 5s;
+    animation-duration: 3s;
     margin-left: auto;
+    /*animation-iteration-count: infinite;*/
 }
 /*--------------------top camera photo--------------------*/
 .photo{
@@ -148,7 +148,6 @@ button{
 }
 .product_name{
     color: #bfbbae;
-    font-family: "Microsoft JhengHei Light";
     font-size: 18px;
     /*color: #a65863;*/
     margin-top: 480px;
@@ -161,7 +160,6 @@ button{
 }
 /*--------------------charactiristics block--------------------*/
 .charactiristics{
-    font-family: "Microsoft JhengHei Light";
     font-size: 17px;
     display: flex;
     flex-wrap: wrap;
@@ -186,7 +184,6 @@ button{
     padding: 15%;
 }
 .text{
-    font-family: "Microsoft JhengHei Light";
     color: white;
     display: grid;
 }
@@ -202,7 +199,6 @@ button{
 /*--------------------clickable camera features--------------------*/
 
 .features_list{
-    font-family: "Microsoft JhengHei Light";
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -226,7 +222,6 @@ button{
     cursor: pointer;
 }
 .feature>div{
-    font-family: "Microsoft JhengHei Light";
     background: black;
     color: #99999b;
     display: grid;
@@ -259,10 +254,15 @@ p{
     margin: 10%;
 }
 
+.feature_details:hover{
+    text-decoration: underline;
+    text-decoration-color: #536585 ;
+    cursor: pointer;
+}
+
 /*--------------------footer--------------------*/
 footer{
     margin-top: 20px;
-    font-family: "Microsoft JhengHei Light";
     background: rgb(42, 42, 42);
     color: #99999b;
     float: end;
@@ -339,9 +339,9 @@ li{
 }
 
 @keyframes line {
-    0%{width: 47%}
-    50%{width: 0%}
-    99%{width: 47%}
+    /*0%{width: 47%}*/
+    from{width: 0%}
+    to{width: 47%}
 
 }
 @keyframes pulse {
