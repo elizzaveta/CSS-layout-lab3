@@ -30,3 +30,9 @@ function on_menu_button_click(){
     if(drop_down_menu.style.visibility === "visible") drop_down_menu.style.visibility = "hidden";
     else drop_down_menu.style.visibility = "visible";
 }
+
+function hide_menu_onload(){
+    let drop_down_menu = document.getElementById("dr_d_menu");
+    drop_down_menu.style.visibility = "hidden";
+}
+

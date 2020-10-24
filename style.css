@@ -70,6 +70,9 @@ button{
 }
 
 /*--------------------drop down menu--------------------*/
+.on_click_drop_down_menu{
+    visibility: hidden;
+}
 .drop_down_menu{
     display: flex;
     flex-direction: column;
@@ -78,7 +81,6 @@ button{
     top: 50px;
     z-index: 56;
     padding: 20px;
-    visibility: hidden;
 }
 .drop_menu_list_item{
     margin: 14px;
@@ -369,6 +371,9 @@ li{
     p{
         font-size: 23px;
     }
+    .on_click_drop_down_menu{
+        visibility: hidden;
+    }
 }
 @media (max-width: 1280px) {
     .info_block{
@@ -387,6 +392,9 @@ li{
     p{
         font-size: 19px;
     }
+    .on_click_drop_down_menu{
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 650px) {
@@ -395,6 +403,9 @@ li{
     }
     .feature>div {
         grid-template-columns: 1fr 1fr;
+    }
+    .on_click_drop_down_menu{
+        visibility: hidden;
     }
 
 }
