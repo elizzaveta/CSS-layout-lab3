@@ -1,12 +1,12 @@
 body{
-    font-family: "Microsoft JhengHei Light";
+    font-family: "Candara Light";
     background: #29292d;
     margin: 0px;
     padding: 0px;
 }
+
 /*--------------------header--------------------*/
 header{
-    text-align: center;
     background: rgb(42 42 42);
     width: 100%;
     height: 50px;
@@ -61,7 +61,6 @@ header{
 }
 button{
     font-family: "Microsoft JhengHei Light";
-    text-align: center;
     cursor: pointer;
 
     background-color: rgb(42 42 42);
@@ -104,7 +103,6 @@ button{
     position: sticky;
     z-index: 49;
     top: -1px;
-    text-align: center;
 }
 .sticky_name{
     position: sticky;
@@ -114,7 +112,7 @@ button{
     margin-left: 10px;
     margin-right: 10px;
     animation-name: color;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 .sticky_line{
     margin-top: 9px;
@@ -124,9 +122,8 @@ button{
     position: sticky;
     z-index: 49;
     top:9px;
-    animation-name:line;                                               /*анимировать линии на скролл, чтобы они от центра расходились. И чтобы лого исчезало*/
+    animation-name:line;
     animation-duration: 3s;
-    /*animation-iteration-count: infinite;*/
 }
 .line_before{
     margin-right: auto;
@@ -146,7 +143,6 @@ button{
 .product_name{
     color: #bfbbae;
     font-size: 8vh;
-    /*color: #a65863;*/
     margin-top: 70vh;
     margin-left: 5%;
 }
@@ -182,17 +178,16 @@ button{
 }
 .text{
     color: white;
-    display: grid;
+    text-align: center;
 }
 .title{
-    text-align: center;
     margin: 10px;
-    font-size: 19px;
 }
-.text_camera{
-    text-align: center;
-}
+.fujifilm{
+    text-decoration: underline;
+    text-decoration-color: #2b2b2f;
 
+}
 /*--------------------clickable camera features--------------------*/
 
 .features_list{
@@ -218,7 +213,7 @@ button{
 .features_list > div:hover{
     cursor: pointer;
 }
-.feature>div{
+.info{
     background: black;
     color: #99999b;
     display: grid;
@@ -240,21 +235,18 @@ button{
     position: absolute;
     visibility: hidden;
 }
-.void{
-    visibility: hidden;
-}
-.feature_img{
-    width: 90%;
-    height: auto;
-}
-p{
-    margin: 10%;
-}
-
 .feature_details:hover{
     text-decoration: underline;
     text-decoration-color: #536585 ;
     cursor: pointer;
+}
+.feature_img{
+    margin: 0 auto;
+
+    width: 90%;
+    height: auto;
+}
+.void_feature{
 }
 
 /*--------------------footer--------------------*/
@@ -299,19 +291,19 @@ li{
     width: 30px;
     height: 30px;
     background: #dfdfe0;
-    border-radius: 50%;
+    border-radius: 50px;
     margin: 7px;
     display: flex;
     align-items: center;
     transition: width 500ms;
 }
 .faq:hover{
-    width: 100px;
-    border-radius: 45%;
+    width: 120px;
     cursor: pointer;
 
 }
 .text_faq{
+    font-size: 16px;
     /*visibility: hidden;*/
     position: absolute;
     left: 60px;
@@ -345,6 +337,7 @@ li{
     from{width: 30px; height: 30px}
     to{width: 0px; height: 0px}
 }
+
 /*--------------------media query--------------------*/
 
 @media (min-width: 1280px) {
@@ -364,8 +357,14 @@ li{
         grid-template-columns: repeat(4,1fr);
         font-size: 20px;
     }
+    .info{
+        height: 560px;
+    }
     p{
         font-size: 23px;
+    }
+    .void_feature{
+        height: 600px;
     }
 }
 @media (max-width: 1280px) {
@@ -383,23 +382,27 @@ li{
         grid-template-columns: repeat(4,1fr);
         font-size: 18px;
     }
+    .info{
+        height: 500px;
+    }
     p{
         font-size: 19px;
+    }
+    .void_feature{
+        height: 500px;
     }
 }
 
 @media (min-width: 650px) {
     .photo{
-        min-height: 100vh;
-        max-height: 150vh;
+        min-height: 700px;
     }
-    .feature>div {
+    .info{
         grid-template-columns: 1fr 1fr;
     }
-    .on_click_drop_down_menu{
-        visibility: hidden;
+    p{
+        margin: 10%;
     }
-
 }
 
 @media (max-width: 650px) {
@@ -409,11 +412,9 @@ li{
     .menu_icon{
         visibility: visible;
     }
-    .search{
-        z-index: auto;
-    }
-    .feature>div {
+    .info{
         grid-template-columns: 1fr;
+        height: 739px;
     }
     .features_list{
         grid-template-columns: repeat(2,1fr);
@@ -421,6 +422,10 @@ li{
     }
     p{
         font-size: 16px;
+        margin: 10px;
+    }
+    .void_feature{
+        height: 759px;
     }
 }
 @media (max-width: 560px) {
@@ -431,13 +436,17 @@ li{
         grid-template-columns: repeat(2, 1fr);
     }
     .photo{
-        max-height: 100vh;
+        min-height: 400px;
     }
     .features_list{
         grid-template-columns: repeat(1,1fr);
         text-align: center;
     }
-    .feature>div{
+    .info{
         grid-template-columns: 1fr;
+        height: 650px;
+    }
+    .void_feature{
+        height: 667px;
     }
 }
