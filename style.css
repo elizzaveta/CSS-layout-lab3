@@ -27,12 +27,10 @@ header{
     background-color: white;
     margin: 4px 0;
 }
-.menu{                                          /*not beautiful*/
+.menu{
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: column;*/
     padding: 7px;
-    /*чтобы меню по центру*/
 }
 .menu_list_item{
     margin-top: auto;
@@ -41,10 +39,11 @@ header{
 }
 
 .menu_list_item:hover{
-    background: #d4c8ba;
     cursor: pointer;
+    text-decoration: underline;
 
 }
+
 .search{
     display: flex;
     flex-direction: row;
@@ -61,6 +60,7 @@ header{
     height: 18px;
 }
 button{
+    font-family: "Microsoft JhengHei Light";
     text-align: center;
     cursor: pointer;
 
@@ -76,22 +76,25 @@ button{
 .drop_down_menu{
     display: flex;
     flex-direction: column;
-    background: lightpink;
+    background: #2a2a2a;
     position: absolute;
-    top: 50px;
+    top: 0px;
+    width: 100%;
     z-index: 56;
-    padding: 20px;
+    /*padding: 20px;*/
 }
 .drop_menu_list_item{
     margin: 14px;
     color: white;
-
-
 }
 .drop_menu_list_item:hover{
     cursor: pointer;
     text-decoration: underline;
 
+}
+.menu_icon_close{
+    margin: 5px;
+    margin-top: 10px;
 }
 /*--------------------sticky logo--------------------*/
 .logo{
@@ -113,7 +116,7 @@ button{
     animation-name: color;
     animation-duration: 4s;
 }
-.line_before{
+.sticky_line{
     margin-top: 9px;
     height: 2px;
     width: 47%;
@@ -121,23 +124,15 @@ button{
     position: sticky;
     z-index: 49;
     top:9px;
-    animation-name:line;
+    animation-name:line;                                               /*анимировать линии на скролл, чтобы они от центра расходились. И чтобы лого исчезало*/
     animation-duration: 3s;
+    /*animation-iteration-count: infinite;*/
+}
+.line_before{
     margin-right: auto;
-    /*animation-iteration-count: infinite;*/
-}                                                                   /*анимировать линии на скролл, чтобы они от центра расходились. И чтобы лого исчезало*/
+}
 .line_after{
-    margin-top: 9px;
-    height: 2px;
-    width: 47%;
-    background: #2a2a2a;
-    position: sticky;
-    z-index: 49;
-    top:9px;
-    animation-name:line;
-    animation-duration: 3s;
     margin-left: auto;
-    /*animation-iteration-count: infinite;*/
 }
 /*--------------------top camera photo--------------------*/
 .photo{
@@ -290,7 +285,7 @@ li{
     top: 93%;
     right: 0%;
 }
-.fixed_buttons>div>img{
+.faq>img{
     height: 15px;
     width: 15px;
     margin: 5px;
@@ -300,7 +295,7 @@ li{
     left: 14px;
 
 }
-.fixed_buttons>div{
+.faq{
     width: 30px;
     height: 30px;
     background: #dfdfe0;
@@ -310,7 +305,7 @@ li{
     align-items: center;
     transition: width 500ms;
 }
-.fixed_buttons>div:hover{
+.faq:hover{
     width: 100px;
     border-radius: 45%;
     cursor: pointer;
@@ -360,6 +355,7 @@ li{
         font-size: 23px;
         margin-right: 10%;
         margin-left: 10%;
+        line-height: 1.7;
     }
     footer{
         grid-template-columns: repeat(4, 1fr);
@@ -371,9 +367,6 @@ li{
     p{
         font-size: 23px;
     }
-    .on_click_drop_down_menu{
-        visibility: hidden;
-    }
 }
 @media (max-width: 1280px) {
     .info_block{
@@ -381,6 +374,7 @@ li{
     }
     .text_camera{
         font-size: 19px;
+        line-height: 1.3;
     }
     footer{
         grid-template-columns: repeat(3, 1fr);
@@ -392,14 +386,12 @@ li{
     p{
         font-size: 19px;
     }
-    .on_click_drop_down_menu{
-        visibility: hidden;
-    }
 }
 
 @media (min-width: 650px) {
     .photo{
-        min-height: 700px;
+        min-height: 100vh;
+        max-height: 150vh;
     }
     .feature>div {
         grid-template-columns: 1fr 1fr;
@@ -439,7 +431,7 @@ li{
         grid-template-columns: repeat(2, 1fr);
     }
     .photo{
-        min-height: 400px;
+        max-height: 100vh;
     }
     .features_list{
         grid-template-columns: repeat(1,1fr);
