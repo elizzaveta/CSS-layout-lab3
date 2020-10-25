@@ -145,9 +145,9 @@ button{
 }
 .product_name{
     color: #bfbbae;
-    font-size: 18px;
+    font-size: 8vh;
     /*color: #a65863;*/
-    margin-top: 480px;
+    margin-top: 70vh;
     margin-left: 5%;
 }
 
