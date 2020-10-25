@@ -60,7 +60,7 @@ header{
     height: 18px;
 }
 button{
-    font-family: "Microsoft JhengHei Light";
+    font-family: "Candara Light";
     cursor: pointer;
 
     background-color: rgb(42 42 42);
@@ -134,7 +134,7 @@ button{
 /*--------------------top camera photo--------------------*/
 .photo{
     display: flex;
-    background-image: url("fujifilm-x-t4-main.jpg");
+    background-image: url("used_images/fujifilm-x-t4-main.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +167,7 @@ button{
 /*--------------------pictire + text--------------------*/
 .main_block_info_text{
 
-    background-image: url("mountains_picture.jpg");
+    background-image: url("used_images/mountains_picture.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
